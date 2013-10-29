@@ -1,0 +1,144 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-untitled, .icon-add_securities, .icon-sp_full, .icon-transfer, .icon-scales, .icon-pie_chart, .icon-minus, .icon-plus, .icon-Back, .icon-Next, .icon-down_triangle, .icon-download_arrow, .icon-Delete, .icon-account-settings-dark, .icon-Refresh, .icon-arrow-up, .icon-arrow-down, .icon-checkmark, .icon-checkmark-2, .icon-home, .icon-table, .icon-chart, .icon-remove, .icon-briefcase, .icon-pencil, .icon-disk, .icon-download, .icon-outline_plus, .icon-solid_plus, .icon-chart-2, .icon-spam, .icon-info, .icon-play, .icon-play-2, .icon-excel_icon {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-untitled:before {
+	content: "\f000";
+}
+.icon-add_securities:before {
+	content: "\e001";
+}
+.icon-sp_full:before {
+	content: "\e002";
+}
+.icon-transfer:before {
+	content: "\e003";
+}
+.icon-scales:before {
+	content: "\21";
+}
+.icon-pie_chart:before {
+	content: "\22";
+}
+.icon-minus:before {
+	content: "\23";
+}
+.icon-plus:before {
+	content: "\24";
+}
+.icon-Back:before {
+	content: "\27";
+}
+.icon-Next:before {
+	content: "\28";
+}
+.icon-down_triangle:before {
+	content: "\29";
+}
+.icon-download_arrow:before {
+	content: "\2a";
+}
+.icon-Delete:before {
+	content: "\2b";
+}
+.icon-account-settings-dark:before {
+	content: "\2c";
+}
+.icon-Refresh:before {
+	content: "\2d";
+}
+.icon-arrow-up:before {
+	content: "\2e";
+}
+.icon-arrow-down:before {
+	content: "\2f";
+}
+.icon-checkmark:before {
+	content: "\30";
+}
+.icon-checkmark-2:before {
+	content: "\31";
+}
+.icon-home:before {
+	content: "\32";
+}
+.icon-table:before {
+	content: "\33";
+}
+.icon-chart:before {
+	content: "\34";
+}
+.icon-remove:before {
+	content: "\36";
+}
+.icon-briefcase:before {
+	content: "\37";
+}
+.icon-pencil:before {
+	content: "\38";
+}
+.icon-disk:before {
+	content: "\39";
+}
+.icon-download:before {
+	content: "\3a";
+}
+.icon-outline_plus:before {
+	content: "\3b";
+}
+.icon-solid_plus:before {
+	content: "\3d";
+}
+.icon-chart-2:before {
+	content: "\3c";
+}
+.icon-spam:before {
+	content: "\3e";
+}
+.icon-info:before {
+	content: "\3f";
+}
+.icon-play:before {
+	content: "\35";
+}
+.icon-play-2:before {
+	content: "\e011";
+}
+.icon-excel_icon:before {
+	content: "\e010";
+}

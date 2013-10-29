@@ -1,0 +1,1335 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WMF-IR UI SandBox</title>
+<meta name="viewport" content="width=1024" />
+<link rel="stylesheet" href="css/ir-styles.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<!--[if lte IE 7]><script src="scripts/lte-ie7.js"></script><![endif]-->
+<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="scripts/ir-behaviors.js"></script>
+
+</head>
+<body >
+
+<div class="layout-978">
+
+<div class="row">
+    	<h1>WMF-IR UI SandBox 2.0</h1>
+        <div class="intro">
+        <p>This document serves as UI Kit and visual design framework for the WMF-IR Application. You must use this along with <a href="http://share.axure.com/BGQDH6/" target="_blank">UI Spec</a>. Browser compatibility: IE8, IE9, FF, Safari and Google Chrome.</p>
+        <ul>
+        	<li><a href="#basic"><h4>Basic Elements</h4><p>Buttons, Toggles and Check Boxes</p></a></li>
+            <li><a href="#navv"><h4>Navigation & Delimiters</h4><p>Mega Menu, Navs and section seperators</p></a></li>
+            <li><a href="#containers"><h4>Containers</h4><p> Modals, Pop-ups and Dialogs</p></a></li>
+            <li><a href="#tablez"><h4>Tables</h4><p>Data grids and tabular content</p></a></li>
+            <li><a href="#dashletz"><h4>Dashlets</h4><p>Mini dashboard and page headers</p></a></li>
+            <li><a href="#scratch"><h4>Scratch Pad</h4><p>Custom cumponets and assets of ScratchPad</p></a></li>
+            <li><a href="#resize"><h4>Resize Strategy</h4><p>Responsive stargey for various display viewports</p></a></li>
+            <li><a href="#icons"><h4>Icons</h4><p>Font Face icons and class names</p></a></li>
+        </ul>
+	</div>
+	<h2><a name="basic">Basic Elements</a></h2>
+    
+	<div class="row">
+    <h3>Buttons, Toggles and Check Boxes</h3>
+		<div class="col3 buttons">	
+        <p><strong>Primary</strong> buttons are probably the most used action buttons of the IR application. They correspond to primary action of workflow. Usually there are only one Primary button in a workflow</p>
+        	<a class="button" href="#"><span>Primary Button</span></a>
+            <a class="button small" href="#"><span>Primary Small</span></a>
+            <a class="button disabled" href="#"><span>Primary Button</span></a>
+            <a class="button small disabled" href="#"><span>Primary Small</span></a>
+            <a class="button" href="#"><span>Primary Button</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button small" href="#"></span><span>Primary Small</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button" href="#"><span class="icon-button_arrow_back"></span><span>Primary Button</span></a>
+            <a class="button small" href="#"><span class="icon-button_arrow_back"></span><span>Primary Small</span></a>
+        </div>
+		<div class="col3">
+			<p><strong>Secondary</strong> corresponds to a secondary action of workflow. These are usually coupled with a primary action button. There can be more than one secondary actions in a workflow.</p>
+        	<a class="button secondary" href="#"><span>Secondary Button</span></a>
+            <a class="button secondary small" href="#"><span>Secondary Small</span></a>
+            <a class="button secondary disabled" href="#"><span>Secondary Button</span></a>
+            <a class="button secondary small disabled" href="#"><span>Secondary Small</span></a>
+            <a class="button secondary" href="#"><span>Secondary Button</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button secondary small" href="#"></span><span>Secondary Small</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button secondary" href="#"><span class="icon-button_arrow_back"></span><span>Secondary Button</span></a>
+            <a class="button secondary small" href="#"><span class="icon-button_arrow_back"></span><span>Secondary Small</span></a>
+        </div>
+		<div class="col3">
+        	<p><strong>Mega Menu</strong> buttons appear in the main Add Investments Megamenu.</p>
+        	<a class="button icon mm addsec" href="#"><span>My Saved Securities</span></a>
+            <a class="button icon mm" href="#"><span class="icon-excel_icon excel"></span>Import Excel List</a>
+            <a class="button icon mm addsec disabled" href="#"><span>Disabled Green</span> Button</a>
+          <a class="button icon mm addinv" href="#"><span>Add Investments</span></a>
+        </div>
+		<div class="col3">
+        	<p><strong>Action</strong> buttons appear in the dialogs or pop-ups.</p>
+        	<span class="actbtn"><span aria-hidden="true" class="icon-pencil"></span>Rename</span></span>
+            <span class="actbtn"><span aria-hidden="true" class="icon-remove"></span>Delete</span></span><br/><br/>
+            <span class="actbtn"><span aria-hidden="true" class="icon-briefcase"></span>Portfolio#324</span></span><br/><br/>
+            <span class="actbtn"><span aria-hidden="true" class="icon-scales"></span>Weight Securities Evenly</span></span><br/><br/>
+            <span class="actbtn"><span aria-hidden="true" class="icon-scales"></span>Zero out Current Holdings</span></span><br/><br/>
+            <span class="actbtn disable"><span aria-hidden="true" class="icon-briefcase"></span>Disabled Action Button</span></span>
+            <br><br>
+            <p><br><strong>Action</strong> buttons on dark background</p>
+            <div class="dark">
+            	<span class="actbtn onpanel"><span aria-hidden="true" class="icon-disk"></span>Save Selected Securities</span><br/><br/>
+                <span class="actbtn onpanel disabled"><span aria-hidden="true" class="icon-disk"></span>Save (Diasabled)</span>
+            </div>
+            <br><br>
+            <p><strong>Chart Toggle</strong> appears at the Asset Allocation Sort Line.</p>
+            <div class="charttoggle"><span class="label">View</span></div>
+      </div>
+         
+		<div class="row-end">&nbsp;</div>	
+	</div> <!-- x row -->
+    
+    
+    
+    
+    
+    <h2><a name="navv">Navigation & Delimiters</a></h2>
+    <div class="row">
+    	<h3>Top Nav</h3>
+        <p> This is a persistent element  that appears on top of the dashlet. It serves as navigation. It is not a breadcrumb as no hierarchy is being represented.</p>
+        <ul id="topnav">
+            	<li><a href="#"><span class="icon-home"></span>Build Portfolio</a></li>
+                <li> Screener</li> 
+                <li><a href="#">Scratch Pad</a></li>
+      	</ul>
+        
+        <h3>Megamenu</h3>
+        <p>Appears on hover of the "Add Investment" button on the dashlet</p>
+      
+        <ul id="megamenu">
+
+            <li>
+                <h3 class="boldgreen"> MY INVESTMENT IDEAS</h3>
+                <p>Your Saved Securities &amp; Strategies</p>
+                  
+                <ul class="mmtab" id="tab1-detail">
+                    <li>
+                        <a href="#" class="button icon mm addsec"><span>My Saved Securities &amp; Strategies</span></a>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Select from your list of <span class="boldgreen">Securities and Strategies</span> or a <span class="boldgreen">Model of Weighted Secutities</span> that you have saved in the past. Strategies that you are eligible for will also display.</p>
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+                        <a href="#" class="button icon mm"><span class="icon-excel_icon excel"></span>Import Excel List</a>
+                        <br>
+                        <br>
+                        <br>
+                        <p><span class="boldgreen">Import</span> your existing <span class="boldgreen">Excel list of Securities</span></p>
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+                        <p><span class="icon-download_arrow" style="color:#387112; font-size:16px; vertical-align: text-top;"></span> Start from a <span class="boldgreen">list template</span></p>
+                    </li>
+                </ul>
+            	
+                <hr>
+            </li>
+            
+            <li>
+                <h3 class="boldbrown">UBS RESEARCH IDEAS</h3>
+                <p>Firm Lists, Dividend Ruler</p>
+            	
+                <ul class="mmtab" id="tab2-detail">
+                	<li>
+                    	
+                        <div class="column1">
+                        	<h3 class="boldbrown">Screens for Securities</h3>
+                            <ul>
+                            	<li><a href="#">Equity Focus List</a></li>
+                                <li><a href="#">Dividend Ruler Stocks</a></li>
+                                <li><a href="#">The World According to Q-GARP</a></li>
+                                <li><a href="#">SMA Select List</a></li>
+                                <li><a href="#">Mutual Fund Select List</a></li>
+                            </ul>
+                            <br>
+                            <p>
+                                Access our screening tools that will
+                                allow you to define a set of criteria
+                                for <span class="boldbrown">UBS Research Ideas</span>
+                                and select individual securities.
+                            </p>
+                        </div>
+                        
+                        <div class="column2">
+                        	<h3 class="boldbrown">Purpose as a Strategy</h3>
+                            <ul>
+                            	<li><a href="#">Equity Focus Strategy</a></li>
+                                <li><a href="#">Dividend Ruler Model</a></li>
+                                <li><a href="#">Q-GARP</a></li>
+                            </ul>
+                        </div>
+                        
+                    </li>
+                </ul>
+                
+                <hr>
+            </li>
+            
+            <li>
+                <h4 class="mmboldblue">INVESTMENT SCREENERS FOR ADVISORY PRODUCTS</h4>
+                <p>Filter for Securities &amp; Strategies eligible for fee-based accounts</p>
+            	
+                <ul class="mmtab" id="tab3-detail">
+                	<li>
+                          <div class="column1">
+                          	<h3>FA Guided</h3>
+                            <p>ACCESS</p>
+                            <ul>
+                                <li><a href="#">Investment Managers</a></li>
+                            </ul>
+                            <p>MAC Researched</p>
+                            <ul>
+                                <li><a href="#">Investment Managers</a></li>
+                            </ul>
+                            <p>PACE Multi</p>
+                            <ul>
+                                <li><a href="#">Mutual Funds</a></li>
+                            </ul>
+                            <p>PACE Select</p>
+                            <ul>
+                                <li><a href="#">Strategies</a></li>
+                            </ul>
+                            <p>Private Wealth Solutions (PWS)</p>
+                            <ul>
+                                <li><a href="#">Strategies</a></li>
+                            </ul>
+                            <p>Strategic Advisor</p>
+                            <ul>
+                                <li><a href="#">Alternative Investments</a></li>
+                                <li><a href="#">Closed Ended Funds</a></li>
+                                <li><a href="#">Equity</a></li>
+                                <li><a href="#">Exchange Traded Products (ETP)</a></li>
+                                <li><a href="#">Fixed Income</a></li>
+                                <li><a href="#">Mutual Funds</a></li>
+                                <li><a href="#">Unit Investment Trusts (UIT)</a></li>
+                            </ul>
+                            
+                            
+                          </div>
+                          <div class="column2">
+                          	<p>Strategic Wealth Portfolio (SWP)</p>
+                            <ul>
+                                <li><a href="#">Exchange Traded Products (ETP)</a></li>
+                                <li><a href="#">Investment Managers</a></li>
+                                <li><a href="#">Mutual Funds</a></li>
+                            </ul>
+                          	<h3>FA Discretionary</h3>
+                            <p>Portfolio Management Program (PMP)</p>
+                            <ul>
+                            	<li><a href="#">Strategies</a></li>
+                            </ul>
+                            <h3>UBS Managed Portfolios</h3>
+                            <ul>
+                            	<li><a href="#">Strategies</a></li>
+                            	
+                            </ul>
+                          </div>
+                    </li>
+                </ul>
+                
+                <hr>
+            </li>
+            
+            <li>
+                <h4 class="mmboldblue">INVESTMENT SCREENERS FOR TRANSACTION PRODUCTS</h4>
+                <p>Filter for Securities eligible for Commision-based Accounts</p>
+                
+                <ul class="mmtab" id="tab4-detail">
+                	<li>
+                          <h3>Investment Screeners for Transaction Products</h3>
+                          <ul>
+                          	<li><a href="#">Equity</a></li>
+                            <li><a href="#">ETFs</a></li>
+                            <li><a href="#">Closed Ended Funds</a></li>
+                            <li><a href="#">Unit Investment Trusts (UIT)</a></li>
+                            <li><a href="#">Mutual Funds</a></li>
+                            <li><a href="#">Non-Traditional (AI)</a></li>
+                            <li><a href="#">Investment Managers</a></li>
+                          </ul>
+                    </li>
+                </ul>
+                
+            </li>
+            QUICK ADD
+            <br>
+            <input type="text" placeholder=" Symbol/CUSIP"/><a class="button secondary" style="float: right;" href="#"><span>Add</span></a>
+        </ul>
+        
+       
+      	<h3>Sort Line</h3>
+      	<p class="spcblo">This is a type of a delimiter that seperates the header section from the body of a screen.</p>
+      	<div id="sortline">
+			<h2>ACCOUNTS </h2> <span class="label">as of 04/12/2013</span><a href="#"><span class="label icon-Refresh"></span></a>
+            <div class="right">
+				<div class="targtoggle"><span class="label">Edit by</span></div>
+				<div class="sortby">
+					<span class="label">Sort by</span>
+					<button class="dropdown" role="button"> Security </button>
+                </div>
+                <div class="ttoggle sort">
+					<div class="expand"><span class="icon-plus"></span>EXPAND ALL</div>
+					<div class="collapse hide"><span class="icon-minus"></span>COLLAPSE ALL</div>
+				</div>
+			</div>
+			
+               
+                <hr/>
+			
+      	</div> <!--x sortline -->
+            
+	</div>
+    
+    <div class="row">
+    	<div class="col6">
+        
+        	<h3>Custom Filter Panel</h3>
+            
+            <div class="custom-filter-panel">
+            	STRATEGY
+                <br/>
+                <br>
+                <button class="dropdown" role="button">
+                	Core
+                </button>
+                <br/>
+                <button class="dropdown" role="button">
+                	Risk Category
+                </button>
+            </div><!--x custom-filter-panel -->
+            
+             <div class="custom-filter">
+            	<strong>Select 100% Allocation</strong>
+                <br/>
+                <input type="radio" id="r1" name="allocation" />
+            	<label for="r1"><span></span>None</label>
+                <br>
+  				<input type="radio" id="r2" name="allocation" />
+            	<label for="r2"><span></span>Equity</label>
+                <br>
+                <input type="radio" id="r3" name="allocation" />
+            	<label for="r3"><span></span>Fixed Income</label>
+                <hr>
+            </div><!--x custom-filter -->
+            
+            <div class="custom-filter">
+            	<strong>Tax Awareness?</strong>
+                <br/>
+                <input type="radio" id="r4" name="tax" />
+            	<label for="r4"><span></span>Yes</label>
+                <br>
+                <input type="radio" id="r5" name="tax" />
+            	<label for="r5"><span></span>No</label>
+                <hr>
+            </div><!--x custom-filter -->
+            
+        </div><!--x col6 -->
+        
+        
+        <div class="col6">
+        	<h3>FAID Toggles</h3>
+            <div class="custom-filter-panel custom-filter-panel-faid">
+                <button class="dropdown" role="button">
+                        Choose FAID
+                </button>
+                <br>
+                &nbsp;&nbsp;
+                <input id="chk1" class="ir-chkbox" type="checkbox" />
+				<label for="chk1" name="demo_lbl_1" class="ir-chkbox-label"></label> &nbsp;&nbsp;Include Splits
+            </div><!--x custom-filter-panel custom-filter-panel-faid -->
+            
+            <div class="faid-toggle">      
+               <span class="icon-plus hide"></span>
+               <span class="icon-minus"></span>
+               <a href="#">FAID 1234</a>   
+            </div><!--x faid-toggle -->
+            
+            <div class="faid-detail">
+                	<table>
+                    	<thead>
+                        	<tr>
+                            	<th colspan="2" style="text-align:left;">
+                                	My Models
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td style="padding: 0 10px;">
+                                	<input id="chk2" class="ir-chkbox" type="checkbox" />
+									<label for="chk2" name="demo_lbl_1" class="ir-chkbox-label"></label>
+                                </td>
+                                <td>
+                                	My Equity Model
+                                    <br>
+                                    <span class="label">PACE</span>
+                                    <a href="#"><span class="label">edit</span></a>
+                                    <a href="#"><span class="label">delete</span></a>           
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td style="padding: 0 10px;">
+                                	<input id="chk3" class="ir-chkbox" type="checkbox" />
+									<label for="chk3" name="demo_lbl_1" class="ir-chkbox-label"></label>
+                                </td>
+                                <td>
+                                	My Fixed Income Model
+                                    <br>
+                                    <div class="">
+                                        <a href="#"><span class="label">edit</span></a>
+                                        <a href="#"><span class="label">delete</span></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table>
+                    	<thead>
+                        	<tr>
+                            	<th colspan="2" style="text-align:left;">
+                                	My Lists
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td style="padding: 0 10px;">
+                                	<input id="chk4" class="ir-chkbox" type="checkbox" />
+									<label for="chk4" name="demo_lbl_1" class="ir-chkbox-label"></label>
+                                </td>
+                                <td>
+                                	My List of Ideas
+                                    <br>
+                                    <div class="">
+                                        <a href="#"><span class="label">edit</span></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+          </div><!--x faid-detail -->
+            
+		</div><!--x col6 -->
+        
+        
+        <div class="row-end"></div>
+    </div> <!--x row -->
+    
+
+
+    
+    
+    
+    
+    
+    <h2><a name="containers">Containers</a></h2>
+    
+    <div class="row">
+    	<h3>Main Modal</h3>
+		<div id="ir-modal">
+        	<div class="header"><h2>Build Portfolio</h2><div class="right"><a href="#" class="close"><img src="images/x.png" width="9" height="9" alt=""></a></div></div>
+            <div class="content">.... Body / min-width= 858px .....<img src="images/tansparent.png" width="300" height="100" alt="filler"></div>
+            <div class="footer"><a class="button secondary left" href="#"><span>Back</span></a>  <div class="right"><a class="button" href="#"><span>Next</span></a></div> </div>
+        </div>
+    	
+    </div><!-- x row -->
+    
+    <div class="row">
+    	<div class="col8">
+            	<h3>Dialog</h3>
+                <div id="ir-dialog">
+                	<div class="header">
+                    	<h2><span aria-hidden="true" class="icon-sp_full"></span>Create New Portfolio</h2>
+                        <div class="right"><a href="#" class="close"><img src="images/x.png" width="9" height="9" alt=""></a></div>
+                    </div>
+                    <hr/>
+                    <div class="body">
+                         <p class="label">PORTFOLIO NAME: </p>
+                         <input name="" type="text" size="60">
+                  </div>
+                     <div class="footer">
+                     	<a class="button secondary small left" href="#"><span>Cancel</span></a><div> <a class="button small" href="#"><span>Create</span></a></div>
+                  </div>
+                     
+          </div>
+      </div>
+
+            <div class="col4">
+            	<h3>Pop-up</h3>
+                <div id="ir-popup">
+                	<div class="header">
+                    	<h2><span aria-hidden="true" class="icon-remove"></span>Delete Portfolio</h2>
+                    </div>
+                    <hr/>
+                   	<div class="body">
+                     <br/>
+                    	<table>
+                        	<tr>
+                            	<td> <span class="icon-spam" style="font-size:18px; color:#d5600a; "></span></td>
+                                <td>You are about to delete the portfolio #2345 , are you sure? </td>
+                            </tr>
+                        </table>
+                        <br/>
+                    
+                         
+                     
+                    
+                  </div>
+                  <div class="footer">
+                     	<a class="button secondary small left" href="#"><span>Cancel</span></a><div> <a class="button small" href="#"><span>Delete</span></a></div>
+                  </div>
+                </div>
+            </div>
+            <div class="row-end">&nbsp;</div>
+	</div><!-- x row -->
+    
+    
+    
+    
+    
+	<h2><a name="tablez"></a>Tables</h2>
+    
+    <div class="row">
+   	  <h3>Table Header</h3>
+    	<div class="tableheader">
+            <div class="settings"><!--<img src="images/settings.png" width="24" height="24" alt="" />--><span class="icon-account-settings-dark acctsettingsdashlet"></span></div>
+   			<h2>AB12345 Smith, Thomas | TOMMY (Welch) | RMA</h2> <a href="#" class="rr-link">RISK/REWARD</a><br/>
+          <span class="label">Current Inv. Amt: </span> <h2>$30,000,000.00</h2> <span class="label">Current Inv. Amt: </span> <h2>$30,000,000.00</h2>
+			<div class="ttoggle">
+          		<div class="expand"><span class="icon-plus"></span>EXPAND</div>
+            	<div class="collapse hide"> <span class="icon-minus"></span>COLLAPSE</div>
+			</div>
+		</div>
+ 	</div> <!-- x row -->
+        
+  <div class="row">
+    <h3>Data Grid</h3>
+    <div id="datagridcontainer">
+    <span class="icon-spam"></span>
+    <span class="icon-info"></span>
+        <table class="ir-datagrid">
+        	<!-- Table header -->
+          	<thead>
+                    <tr>
+                        <th scope="col" id="...">Description</th>
+                        <th scope="col" id="...">Symbol</th>
+                        <th scope="col" id="...">Current Value</th>
+                        <th scope="col" id="...">Current %</th>
+                        <th scope="col" id="...">Target $</th>
+                        <th scope="col" id="...">Target %</th>
+                        <th scope="col" id="...">Net Change</th>
+                        <th scope="col" id="...">- </th>
+                
+                    </tr>
+      </thead>
+              
+            <!-- Table footer -->
+                <tfoot>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Cash UBS Bank</td>
+                    </tr>
+                </tfoot>
+            
+            <!-- Table body -->
+                <tbody>
+                    <tr>
+                        <td>Cash UBS Bank</td>
+                        <td>PVFAX</td>
+                        <td class="cash">$95,862.93</td>
+                        <td class="cash">12.93%</td>
+                        <td class="cash">$3,330,030,340.33</td>
+                        <td class="cash">32.43%</td>
+                        <td class="cash">2.13%</td>
+                        <td class="icon-Delete"></td>
+                    </tr>
+                    <tr>
+                        <td>SPDR S&P EFT</td>
+                        <td>SPEFT</td>
+                        <td class="cash">$4,562.12</td>
+                        <td class="cash">6.23%</td>
+                        <td class="cash">$1,030,040,360.13</td>
+                        <td class="cash">13.29%</td>
+                        <td class="cash">2.93%</td>
+                        <td class="icon-Delete">&nbsp;</td>
+                    </tr>
+                       <tr>
+                        <td>Mutual Funds</td>
+                        <td>MFT</td>
+                        <td class="cash">$33,532.12</td>
+                        <td class="cash">5.43%</td>
+                        <td class="cash">$330,040,360.13</td>
+                        <td class="cash">33.29%</td>
+                        <td class="cash">2.43%</td>
+                        <td class="icon-Delete">&nbsp;</td>
+                    </tr>
+                     <tr class="recent">
+                        <td>Paradigm Value FUND .. </td>
+                        <td>PVFAX</td>
+                        <td class="cash">$23,862.93</td>
+                        <td class="cash">12.93%</td>
+                        <td class="cash">$2,032,020,320.23</td>
+                        <td class="cash">12.93%</td>
+                        <td class="cash">2.93%</td>
+                        <td class="icon-Delete">&nbsp;</td>
+                    </tr>
+            
+                </tbody>
+      </table>
+            
+           
+    </div>
+  </div> <!-- x row -->
+     
+     
+    <div class="row">
+    	<h3>Asset Allocation Table</h3>
+     	
+        
+        <table class="ir-datagrid aa-table">
+            
+        
+            <thead>
+            <tr class="aa-table-header">
+            	<td class="clearall"><span class="label">Tier</span> 
+                        <button class="dropdown" role="button">
+                            Choose one ...
+                        </button>
+                </td>
+                <td colspan="2" class="blueme">Proposed Holding</td>
+                <td colspan="2" class="blueme">
+                	<button class="dropdown" role="button" style="background: #f0f0f0; box-shadow: none;">
+                            Asset Allocation Model
+                  </button>
+                </td>
+                <td colspan="2" class="blueme">
+               
+                            Net Change
+                        	
+                </td>
+            </tr>
+            	<tr>
+                	<th>
+                    
+                    </th>
+                  <th>
+                    	Value ($)
+                  </th>
+                    <th>
+                    	% of Portfolio
+                    </th>
+                  <th>
+                    	Value ($)
+                  </th>
+                  <th>
+                    	% of Portfolio
+                  </th>
+                  <th>
+                    	Value ($)
+                  </th>
+                  <th>
+                    	% of Portfolio
+                  </th>
+                </tr>
+            </thead>
+            <tfoot>
+            	<tr>
+                    <td>
+                        Total
+                    </td>
+                    <td>
+                        8,312,323.50
+                    </td>
+                    <td>
+                        100.00
+                    </td>
+                    <td>
+                        8,312,323.50
+                    </td>
+                    <td>
+                        100.00
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+            	</tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                	<td>
+                    	<span class="icon-down_triangle" style="font-size: 10px; vertical-align: central;"></span>Fixed Income
+                    </td>
+                    <td>
+                    	125,875.70
+                    </td>
+                    <td>
+                    	1.51
+                    </td>
+                    <td>
+                    	0.00
+                    </td>
+                    <td>
+                    	0.00
+                    </td>
+                    <td>
+                    	-125,875.70
+                    </td>
+                    <td>
+                    	-1.51 <span class="icon-arrow-down" style="color: #ff0b00;"></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td>
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="icon-down_triangle" style="font-size: 10px; vertical-align: central;"></span>US
+                    </td>
+                    <td>
+                    	7,854,889.60
+                    </td>
+                    <td>
+                    	94.49
+                    </td>
+                    <td>
+                    	5,735,719.19
+                    </td>
+                    <td>
+                    	69.00
+                    </td>
+                    <td>
+                    	-2,119,170.42
+                    </td>
+                    <td>
+                    	-25.49 <span class="icon-arrow-down" style="color: #ff0b00;"></span>
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="icon-down_triangle" style="font-size: 10px; vertical-align: central;"></span>Municipals
+                    </td>
+                    <td>
+                    	7,854,889.60
+                    </td>
+                    <td>
+                    	94.49
+                    </td>
+                    <td>
+                    	5,735,719.19
+                    </td>
+                    <td>
+                    	69.00
+                    </td>
+                    <td>
+                    	-2,119,170.42
+                    </td>
+                    <td>
+                    	25.49 <span class="icon-arrow-up" style="color: #21c614;"></span>
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Core
+                    </td>
+                    <td>
+                    	7,854,889.60
+                    </td>
+                    <td>
+                    	94.49
+                    </td>
+                    <td>
+                    	5,735,719.19
+                    </td>
+                    <td>
+                    	69.00
+                    </td>
+                    <td>
+                    	-2,119,170.42
+                    </td>
+                    <td>
+                    	25.49 <span class="icon-arrow-up" style="color: #21c614;"></span>
+                    </td>
+                </tr>
+        	</tbody>    
+        </table>
+    </div> 
+     
+     <div class="row">
+     	<h3>Reallocate Target</h3>
+        <div class="tableheader">
+        	<h2>AB12345 Smith, Thomas | JESSE (Welch) | RMA</h2>
+            <br>
+            <span class="label">Current Inv. Amt: </span> <h2>$300,000.00</h2> <span class="label">Proposed Advisory Program: </span> <h2>RMA</h2>
+          <div class="rightsidee">
+            	<span class="label">TARGET INV. AMT</span>
+                <br>
+           	  	<input type="text" value="$30,000,000.00" /> &nbsp; <span style="color:#000;"> 12% </span>
+          </div>
+        </div>
+     </div>
+     
+    
+  <h2><a name="scratch"></a>Scratch Pad</h2>
+	<div class="row">
+   	  <div class="col7">
+			<h3><span class="subdue">Scratch Pad:</span> Table Header</h3>
+			<div class="tableheader models">
+	      <h2>Models</h2><br/>
+                <div class="ttoggle">
+                    <div class="expand"><span class="icon-plus"></span>EXPAND</div>
+                    <div class="collapse hide"> <span class="icon-minus"></span>COLLAPSE</div>
+                </div>
+            </div>
+			<h3><span class="subdue">Scratch Pad:</span> Data Grid</h3>
+    		<table class="ir-datagrid models">
+	  		<!-- Table header -->
+		  		<thead>
+                    <tr>
+                        <th scope="col" class="fixed">
+                        	<input id="chk5" class="ir-chkbox" type="checkbox" />
+							<label for="chk5" name="demo_lbl_1" class="ir-chkbox-label"></label></th>
+                        <th scope="col" id="...">Model <span class="alignright">Applied%</span></th>
+                        <th scope="col" class="fixed">&nbsp;</th>
+                    </tr>
+	  			</thead>
+	
+			<!-- Table footer -->
+	
+                <tfoot>
+                </tfoot>
+                  
+			<!-- Table body -->
+			<tbody>
+                  <tr>
+                      <td class="fixed"><input id="chk6" class="ir-chkbox" type="checkbox" />
+							<label for="chk6" name="demo_lbl_1" class="ir-chkbox-label"></label></td>
+                      <td>Fixed Income Models <span class="detail label">show detail</span>
+                      <input type="text" name="textfield" class="txtfield alignright"> 
+                      		<table width="100%" class="ir-datagrid modelsgrid">
+                                <thead>
+                                  <tr>
+                                    <th>Symbol</th>
+                                    <th>Description </th>
+                                    <th class="cash">Weighting</th>
+                                    <th class="cash">Applied %</th>
+                                  </tr>
+                                </thead>
+                                <tfoot>
+             	  					<tr>
+               	    					<td></td>
+                                        <td></td>
+                                        <td>
+                                            Fixed income total
+                                        </td>
+                                        <td>
+                                            34.40%
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                  <tr>
+                                    <td>PVFAX</td>
+                                    <td>Cash UBS Banck ...</td>
+                                    <td class="cash">10.00%</td>
+                                    <td  class="cash">02.30%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BHYAX</td>
+                                    <td>Barclays High Yield Bond</td>
+                                    <td class="cash">12.23%</td>
+                                    <td class="cash">12.12%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>JPMC</td>
+                                    <td>JP Morgan Chase</td>
+                                    <td class="cash">2.23%</td>
+                                    <td class="cash">3.12%</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                      </td>
+                      <td><span aria-hidden="true" class="icon-Delete"></span></td>
+                  </tr>
+                  <tr>
+                      <td class="fixed"><input id="chk7" class="ir-chkbox" type="checkbox" />
+							<label for="chk7" name="demo_lbl_1" class="ir-chkbox-label"></label></td>
+                      <td>Equity Models <span class="detail label"><a>show detail</a></span><input type="text" name="textfield2" class="txtfield alignright">
+                            <table width="100%" class="ir-datagrid modelsgrid">
+                                <thead>
+                                  <tr>
+                                    <th>Symbol</th>
+                                    <th>Description </th>
+                                    <th class="cash">Weighting</th>
+                                    <th class="cash">Applied %</th>
+                                  </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            Fixed income total
+                                        </td>
+                                        <td>
+                                            34.40%
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                  <tr>
+                                    <td>PVFAX</td>
+                                    <td>Cash UBS Banck ...</td>
+                                    <td class="cash">10.00%</td>
+                                    <td  class="cash">02.30%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BHYAX</td>
+                                    <td>Barclays High Yield Bond</td>
+                                    <td class="cash">12.23%</td>
+                                    <td class="cash">12.12%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>JPMC</td>
+                                    <td>JP Morgan Chase</td>
+                                    <td class="cash">2.23%</td>
+                                    <td class="cash">3.12%</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                      </td>
+                    <td><span aria-hidden="true" class="icon-Delete"></span></td>
+                  </tr>
+              <tr>
+                <td class="fixed"><input id="chk8" class="ir-chkbox" type="checkbox" />
+								<label for="chk8" name="demo_lbl_1" class="ir-chkbox-label"></label></td>
+                <td>Fixed Income Models <span class="detail label">show detail</span>
+                  <input type="text" name="textfield" class="txtfield alignright">
+                 			 <table width="100%" class="ir-datagrid modelsgrid">
+                                <thead>
+                                  <tr>
+                                    <th>Symbol</th>
+                                    <th>Description </th>
+                                    <th class="cash">Weighting</th>
+                                    <th class="cash">Applied %</th>
+                                  </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            Fixed income total
+                                        </td>
+                                        <td>
+                                            34.40%
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                  <tr>
+                                    <td>PVFAX</td>
+                                    <td>Cash UBS Banck ...</td>
+                                    <td class="cash">10.00%</td>
+                                    <td  class="cash">02.30%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BHYAX</td>
+                                    <td>Barclays High Yield Bond</td>
+                                    <td class="cash">12.23%</td>
+                                    <td class="cash">12.12%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>JPMC</td>
+                                    <td>JP Morgan Chase</td>
+                                    <td class="cash">2.23%</td>
+                                    <td class="cash">3.12%</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                </td>
+                <td><span class="icon-Delete"></span></td>
+              </tr>
+			</tbody>
+			</table>
+            
+            <h3><span class="subdue">Scratch Pad:</span> Drop-down list</h3>
+          
+            <img src="images/chkd2.png" height="24px" width="24px" style="position: relative; top: 6px;">
+            <button class="dropdown" role="button">
+		  		Save Selected Securities
+			</button>
+            
+            <div class="scratchpad-accounts">
+            	<h3><span class="subdue">Scratch Pad:</span> Accounts menu</h3>
+                <ul>
+                    <li><button class="accounts-button" type="button">AB12345 Smith, Thomas | TOMMY (Welch)</button></li>
+                    <li><button class="accounts-button" type="button">AB12345 Smith, Thomas | TOMMY (Welch)</button></li>
+                    <li><button class="accounts-button" type="button">AB12345 SHORTNAME (FRIENDLY NAME123456789123456789) | TYPE | LastName, FirstName</button></li>
+                </ul>
+            </div>
+            
+	  </div>
+ 
+		<div class="col5">
+        	<h3><span class="subdue">Scratch Pad:</span> Docked</h3>
+            <div id="ir-scratchpad">
+            	<img src="images/clip.png" width="30" height="39" alt="clip" class="clip">
+           	 	<div class="empty">No securities added.</div>            
+            </div>
+            
+        	<h3><span class="subdue">Scratch Pad:</span> Container</h3>
+	    <p>This contains all the elements of the scratch pad. The top-margin must be exactly laid on top of the sort-line above (see spec).</p>  
+			<div id="ir-scratchpad-container">
+				<img src="images/clip2.png" width="27" height="41" alt="" class="clip">
+				<div class="fold"> <img src="images/paper-fold.png" width="36" height="40" alt=""></div>
+           	 	<div class="body">
+                			<span class="subdue">  .... Body .....</span> 
+                            <img src="images/tansparent.png" width="150" height="176" alt="filler">
+                </div>
+			</div>
+        	
+        </div>
+		<div class="row-end"> </div>
+       
+    </div> <!-- x row -->
+    	
+        
+
+    
+    <h2><a name="dashletz"></a>Dashlets</h2>
+    <p> Dashlets are custom artifacts that resemble a small Dashboard (hence 'Dashlet'). They capture the most important data of a page and sometimes persist across several pages within a workflow. Several flavors of these Dashlets: </p>
+    <div class="row">
+    	
+        <h3>Main Dashlet</h3>
+        <p>This is most comprehsive Dashlet. </p>
+        <div class="dashlet">
+            <div class="titlesection">
+                <h2>AB12345 Smith, Thomas | TOMMY (Welch) | RMA</h2><br/>
+                <a href="#" class="rr-link">RISK/REWARD</a><span class="label">Proposal Risk Profile: </span> <span class="prp">MODERATE</span> <a href="#" class="rr-link"> Allocation Settings</a>
+            </div>
+            <div class="addinvbtn-container"> <a class="button icon mm addinv" href="#"><span>Add Investments</span></a> </div>
+            <div class="buttonbar">
+                <div class="ta">
+                    <span class="label">TARGET ALLOCATION</span> 
+                    <span class="value">mySavedTA</span>
+                </div>
+                <div class="tia">
+                    <span class="label">TARGET INV. AMOUNT</span> 
+                    <span class="value">$302,980,678,450.34</span>
+                    <div class="label"> Re-allocate & add mock acc.</div>
+                </div>
+                <div class="folio">
+                    <span class="label">PORTFOLIO</span> 
+                    <span class="value">Portfolio #234</span>
+                </div>
+            </div>
+        </div><!-- x dashlet -->
+        <p>This detail flap occurs only on the Main Dashlet to show alerts generated at the Build Portfolio interactions.</p>
+        <div class="alerts-detail">
+        	<table class="ir-datagrid alertsgrid">
+            	<thead>
+                    <tr>
+                        <th colspan="3"><span class="icon-spam" style="color: #e54e4b;"></span>Restricted List (3) <a class="label" href="#">Remove all securities</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    	<td>&nbsp;</td>
+                        <td>Paradign fund value</td>
+                        <td>AB1356|Tommy|shortname|(Welch)</td>
+                    </tr>
+                    <tr>
+                    	<td>&nbsp;</td>
+                        <td>AJAX</td>
+                        <td>AB1356|Jaimey|shortname|(Welch)</td>
+                    </tr>
+                    <tr>
+                    	<td>&nbsp;</td>
+                        <td>ADBE</td>
+                        <td>AB1356|Miles|shortname|(Davis)</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="3"><span class="icon-info" style="color: #3bd4f0;"></span>Investor does not fill the min. requirements for net worth <a class="label" href="#">Remove all securities</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    	<td>&nbsp;</td>
+                        <td>PVFAX</td>
+                        <td>AB1356|Tommy|shortname|(Welch)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="alerts">
+            <p>
+             <span class="icon-spam" style="color: #e54e4b;"></span>
+   			 <span class="icon-info" style="color: #3bd4f0;"></span>
+            You have 4 critical alerts and 3 info alerts, <a href="#">open alert details</a>
+            <a href="#">Export to excel</a>
+            </p>
+            <div class="ttoggle flap">
+        		<div class="expand"><span class="icon-minus"></span>CLOSE</div>
+            	<div class="collapse hide"> <span class="icon-plus"></span>OPEN</div>
+        	</div>
+        </div>
+        
+        <h3>Slim Dashlet</h3>
+        <p>Appears at the Scratch Pad</p>
+        	<div class="dashlet slim">
+            	<div class="titlesection">
+                	<h2>Thomas & Mary Group / Shortname / Tommy (Welch) ...</h2><br/>
+                	<a href="#" class="rr-link">RISK/REWARD</a><span class="label">Proposal Risk Profile: </span> <span class="prp">MODERATE</span> <a href="#" class="rr-link"> Allocation Settings</a>
+            	</div>
+                <div class="addinvbtn-container"> <a class="button icon mm addinv" href="#"><span>Add Investments</span></a> </div>
+                
+                <div class="buttoncontainer">
+                    <div class="tia">
+                        <span class="label">TARGET INV. AMOUNT</span> 
+                        <span class="value">$302,980,678,450.34</span>
+                        <span class="label"> Re-allocate amount.</span>
+                    </div>
+              </div> 
+        	</div><!-- x dashlet -->
+            
+             
+               
+            
+        <h3>Simple Dashlet</h3>
+        <p>Appears on the investment ideas page</p>
+        <div class="dashlet investmentideas">
+       	  <div class="titlesection">
+            	<h2>Thomas & Mary Group / Shortname / Tommy (Welch) ...</h2>
+                <br/>
+                <span class="label">Proposal Risk Profile: </span>
+                <span class="prp">MODERATE</span>
+                <a href="#" class="rr-link"> Allocation Settings</a>
+          </div>
+        </div>    
+            
+            
+            
+            
+  </div><!-- x row -->
+  
+  <h2><a name="resize"></a>Resize Strategy </h2>
+  <div class="row resize">
+      <div class="col4" >
+          <p>Currently we support the following ViewPorts:</p>
+            <ul class="viewport" >
+                <li>1024 x 768 (min.)</li>
+                <li>1440 × 900 (max)</li>
+            </ul><br/>
+            
+          
+            <b>NOTE: </b>In general all artifacts must  scale evenly, seemlessly, 100% to its parent container from one viewport to another.
+       </div>
+       <div class="row col8" >
+            <h4>Special Cases</h4>
+           <p>Things like Modals and Dashlets are exception to the above rule. Open the links below to view special cases on how they must behave when resized. Best viewd on the latest FF browser.</p>
+       <ul class="intro">
+                <li><a href="resize-modals.html" target="_new"><h4>Resized Modals</h4></a></li>
+                <li><a href="resize-dashlets.html" target="_new"><h4>Resized Dashlets</h4></a></li>
+                <li></li>
+          </ul>
+       
+       </div>
+   <div class="row-end"> </div>
+  </div>
+  
+  
+  
+  <h2><a name="icons"></a>Icons </h2>
+  <p>Font Face icons and its classes</p>
+  <div class="row">
+ 	 <section class="mtm clearfix" id="glyphs">
+       
+	<span class="box1">
+		<span aria-hidden="true" class="icon-untitled"></span>
+		&nbsp;icon-untitled
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-add_securities"></span>
+		&nbsp;icon-add_securities
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-sp_full"></span>
+		&nbsp;icon-sp_full
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-transfer"></span>
+		&nbsp;icon-transfer
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-scales"></span>
+		&nbsp;icon-scales
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-pie_chart"></span>
+		&nbsp;icon-pie_chart
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-minus"></span>
+		&nbsp;icon-minus
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-plus"></span>
+		&nbsp;icon-plus
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-Back"></span>
+		&nbsp;icon-Back
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-Next"></span>
+		&nbsp;icon-Next
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-down_triangle"></span>
+		&nbsp;icon-down_triangle
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-download_arrow"></span>
+		&nbsp;icon-download_arrow
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-Delete"></span>
+		&nbsp;icon-Delete
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-account-settings-dark"></span>
+		&nbsp;icon-account-settings-dark
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-Refresh"></span>
+		&nbsp;icon-Refresh
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-arrow-up"></span>
+		&nbsp;icon-arrow-up
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-arrow-down"></span>
+		&nbsp;icon-arrow-down
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-checkmark"></span>
+		&nbsp;icon-checkmark
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-checkmark-2"></span>
+		&nbsp;icon-checkmark-2
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-home"></span>
+		&nbsp;icon-home
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-table"></span>
+		&nbsp;icon-table
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-chart"></span>
+		&nbsp;icon-chart
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-remove"></span>
+		&nbsp;icon-remove
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-briefcase"></span>
+		&nbsp;icon-briefcase
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-pencil"></span>
+		&nbsp;icon-pencil
+
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-disk"></span>
+		&nbsp;icon-disk
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-download"></span>
+		&nbsp;icon-download
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-outline_plus"></span>
+		&nbsp;icon-outline_plus
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-solid_plus"></span>
+		&nbsp;icon-solid_plus
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-chart-2"></span>
+		&nbsp;icon-chart-2
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-spam"></span>
+		&nbsp;icon-spam
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-info"></span>
+		&nbsp;icon-info
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-play"></span>
+		&nbsp;icon-play
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-play-2"></span>
+		&nbsp;icon-play-2
+	</span>
+	<span class="box1">
+		<span aria-hidden="true" class="icon-excel_icon"></span>
+		&nbsp;icon-excel_icon
+	</span>
+	</section>
+	</div>
+
+    
+
+<div class="row">
+	<p>Copyright 2013
+    <br> UBS User Experience
+    <br> 
+    Updated 
+    September 13, 2013</p>
+</div>
+	
+</div>
+
+	<script>
+	document.getElementById("glyphs").addEventListener("click", function(e) {
+		var target = e.target;
+		if (target.tagName === "INPUT") {
+			target.select();
+		}
+	});
+	</script>
+
+</body>
+</html>

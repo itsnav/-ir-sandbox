@@ -1,0 +1,51 @@
+/* This code is only meant for previewing your Reflow design. */
+
+
+
+html, body{
+    height: 100%;
+}
+
+body { background-color: rgb(153, 153, 153); }
+
+#visible_canvas, #head, #foot{
+	color:#C33;
+	font-weight:bold;
+	margin-left: 120px;
+}
+
+
+#ir-modal .content {
+	min-height:590px;
+	max-height:640px;	
+	height: 640px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+	#ir-modal { margin: 20px auto; }
+	#ir-modal .content { height:640px; }
+  	#ir-modal .content .filters { height:640px; }
+	#ir-modal .content .sbt-contentContainer { height:640px; }
+}
+
+@media only screen and (max-width: 1280px) {
+	#ir-modal { margin: 20px auto; }
+   	#ir-modal .content { height:640px; }
+	#ir-modal .content .filters { height:640px; }
+	#ir-modal .content .sbt-contentContainer { height:640px; }
+
+}
+
+@media only screen and (max-width: 1024px) {
+	#ir-modal { margin: 10px auto; }
+    #ir-modal .content {
+		height:590px;
+	}
+	#ir-modal .content .filters { height:590px; }
+	#ir-modal .content .sbt-contentContainer { height:590px; }
+}
+

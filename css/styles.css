@@ -1,0 +1,202 @@
+/* The following styles are to visualize how the demo code works. Do not include this in your code. */
+
+
+body {
+	background:url(../images/texture.png) repeat;
+}
+div.col1, div.col2, div.col3, div.col4, div.col5, div.col6, div.col7, div.col8, div.col9, div.col10, div.col11, div.col12 { 
+
+}
+div.row { padding-top: 10px; padding-bottom: 10px;  brder: 1px blue solid; }
+div.row:first-child { padding-top: 20px; }
+div.row:last-child { margin-top: 10px; padding: 20px 0px; }
+
+.row .button { margin-bottom: 10px; clear:left; }
+.row p { margin:0; margin-bottom: 10px;  }
+
+#ir-modal .footer .button { margin-bottom:0;}
+#ir-dialog .footer .button, #ir-popup .footer .button { margin-bottom:0;}
+
+h4 { margin-bottom:0; color:#555; }
+.intro li a { text-decoration:none; }
+.intro li a h4:before {
+	content: "» ";
+}
+
+
+p { max-width: 810px; color:#999; }
+
+.test {
+	border: 1px red solid;
+}
+
+h2 { margin-top: 60px; }
+div h3 { margin-top: 30px; }
+
+.subdue {color:#777;}
+
+.row div.buttons { margin-left:0; }
+
+.spcblo { margin-bottom: 30px !important;}
+
+.dark {
+	background-color:#556996;
+	padding: 10px;
+}
+
+
+.intro ul {
+	border: 2px solid #ccc;
+	background-color:#FFF;
+	border-radius:4px;
+	padding: 20px;
+	overflow:hidden;
+}
+
+
+.intro ul li {
+  float:left;
+  display:inline;
+  width:25%;
+}
+
+.resize h4 {
+	margin-top:0px;
+}
+
+ul.viewport li { 
+	color:#d5600a; 
+	font-size:14px; 
+	font-weight:bold;
+	margin-left: 20px;
+	margin-bottom: 4px;
+	
+	}
+.resize ul.intro li a {
+	color:#C30;
+}
+
+/*
+
+978 Grid System CSS Framework
+http://978.gs
+
+Copyright (c) 2011 Brothers Roloff
+http://www.brothersroloff.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+div.layout-978 { width: 978px; margin: 0px auto; }
+
+div.row { height: 1%; }
+div.row-end { clear: both; font: 1px/1px sans-serif; height: 1px; overflow: hidden; }
+
+div.col1, div.col2, div.col3, div.col4, div.col5, div.col6, div.col7, div.col8, div.col9, div.col10, div.col11, div.col12 { float: left; margin-left: 30px; }
+div.col1:first-child, div.col2:first-child, div.col3:first-child, div.col4:first-child, div.col5:first-child, div.col6:first-child, div.col7:first-child, div.col8:first-child, div.col9:first-child, div.col10:first-child, div.col11:first-child, div.col12:first-child { margin-left: 0px; }
+div.col1 { width: 54px; }
+div.col2 { width: 138px; }
+div.col3 { width: 222px; }
+div.col4 { width: 306px; }
+div.col5 { width: 390px; }
+div.col6 { width: 474px; }
+div.col7 { width: 558px; }
+div.col8 { width: 642px; }
+div.col9 { width: 726px; }
+div.col10 { width: 810px; }
+div.col11 { width: 894px; }
+div.col12 { width: 978px; }
+
+
+
+
+/* layout the icons*/
+
+section, header, footer {display: block;}
+	
+	/** {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 10;
+	}*/
+	.glyph {
+		font-size: 16px;
+		float: left;
+		text-align: center;
+		background: #eee;
+		padding: .75em;
+		margin: .75em 1.5em .75em 0;
+		width: 7.5em;
+		border-radius: .25em;
+		box-shadow: inset 0 0 0 1px #f8f8f8, 0 0 0 1px #CCC;
+	}
+	.glyph input {
+		font-family: consolas, monospace;
+		font-size: 13px;
+		width: 100%;
+		text-align: center;
+		border: 0;
+		box-shadow: 0 0 0 1px #ccc;
+		padding: .125em;
+	}
+	.w-main {
+		width: 80%;
+	}
+	.centered {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fs1 {
+		font-size: 2em;
+	}
+	header {
+		margin: 2em 0;
+		padding-bottom: .5em;
+		color: #666;
+		box-shadow: 0 2px #eee;
+	}
+	header h1 {
+		font-size: 2em;
+		font-weight: normal;
+	}
+	.clearfix:before, .clearfix:after { content: ""; display: table; }
+	.clearfix:after, .clear { clear: both; }
+	footer {
+		margin-top: 2em;
+		padding: .5em 0;
+		box-shadow: 0 -2px #eee;
+	}
+	
+	.box1 {
+		font-size: 16px;
+		display: inline-block;
+		width: 15em;
+		padding: .25em .5em;
+		background: #eee;
+		margin: .5em 1em .5em 0;
+	}
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <!-- This code is only meant for previewing your Reflow design. -->
+    <head>
+	<link rel="stylesheet" href="css/boilerplate.css" />
+    <link rel="stylesheet" href="css/ir-styles.css" />\
+    <link rel="stylesheet" href="css/page1.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <script type="text/javascript" src="scripts/jquery_002.js"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript">
+	function capitalize(string) {
+		string = string.substring(0, 1).toUpperCase() + string.slice(1);
+		return string;
+	}
+
+	function resize() {
+		$('#head').html('<span class="label">Modal Header:</span>' + $('#ir-modal').width() + ' &times; ' + '34' );
+		$('#visible_canvas').html('<span class="label">Modal Content:</span>' + $('#ir-modal').width() + ' &times; ' + $('#ir-modal .content').height() );
+		$('#foot').html('<span class="label">Modal Content:</span>' + $('#ir-modal').width() + ' &times; ' + '50' );
+	}
+
+	$(function() {
+		resize();
+	});
+</script>
+    </head>
+    <body onresize="resize();">
+
+	
+       <div id='ir-modal' class='clearfix'>
+            <div class="header"><h2>Build Portfolio</h2><span id="head">1405 × 707</span><div class="right"><a href="#" class="close"><img src="images/x.png" width="9" height="9" alt=""></a></div></div>
+            <div class="content">
+            	<p> &nbsp; </p>
+            	<span id="visible_canvas">1405 × 707</span><br/>
+        
+        
+            </div>
+            <div class="footer"><a class="button secondary left" href="#"><span>Back</span></a> <span id="foot">1405 × 707</span><div class="right"><a class="button" href="#"><span>Next</span></a></div> </div>
+       </div>
+
+	
+    </body>
+</html>

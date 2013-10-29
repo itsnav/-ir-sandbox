@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <!-- This code is only meant for previewing your Reflow design. -->
+    <head>
+	<link rel="stylesheet" href="css/boilerplate.css" />
+    <link rel="stylesheet" href="css/ir-styles.css" />
+    <link rel="stylesheet" href="css/page2.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <script type="text/javascript" src="scripts/jquery_002.js"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript">
+	function capitalize(string) {
+		string = string.substring(0, 1).toUpperCase() + string.slice(1);
+		return string;
+	}
+
+	function resize() {
+		$('#head').html('<span class="label">Modal Header:</span>' + $('#ir-modal').width() + ' &times; ' + '34' );
+		$('#visible_canvas').html('<span class="label">Modal Content:</span>' + $('#ir-modal').width() + ' &times; ' + $('#ir-modal .content').height() );
+		$('#foot').html('<span class="label">Modal Footer:</span>' + $('#ir-modal').width() + ' &times; ' + '50' );
+		$('#dashletsize').html('<span class="label">Dashlet Size:</span>' + $('#ir-modal .respDashlet.main').width() + ' &times; ' + $('#ir-modal .respDashlet').height() );
+		$('#slimdash').html('<span class="label">Slim Dashlet Size:</span>' + $('#ir-modal .respDashlet.slim').width() + ' &times; ' + $('#ir-modal .respDashlet.slim').height() );
+		$('#simpledash').html('<span class="label">Slim Dashlet Size:</span>' + $('#ir-modal .respDashlet.simple').width() + ' &times; ' + $('#ir-modal .respDashlet.simple').height() );
+	}
+
+	$(function() {
+		resize();
+	});
+</script>
+    </head>
+    <body onresize="resize();">
+	
+       <div id='ir-modal' class='clearfix'>
+            <div class="header"><h2>Build Portfolio</h2><span id="head">1405 × 707</span><div class="right"><a href="#" class="close"><img src="images/x.png" width="9" height="9" alt=""></a></div></div>
+            <div class="content">
+            
+            <div class="respDashlet main">
+            	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+                	<tr>
+                    	<td class="lt"><a class="button icon mm addinv" href="#"><span>Add Investments</span></a></td>
+                        <td class="mid">
+                        	<div class="titlesection">
+                        		<h2>AB12345 Smith, Thomas | TOMMY (Welch) | RMA</h2><br/>
+                        		<a href="#" class="rr-link">RISK/REWARD</a><span class="label">Proposal Risk Profile: </span> <span class="prp">MODERATE</span> <a href="#" class="rr-link"> Allocation Settings</a>
+                    		</div>
+                            <div class="buttonbar">
+                                <div class="ta">
+                                    <span class="label">TARGET ALLOCATION</span> 
+                                    <span class="value">mySavedTA</span>
+                                </div>
+                                <div class="tia">
+                                    <span class="label">TARGET INV. AMOUNT</span> 
+                                    <span class="value">$302,980,678,450.34</span>
+                                    <div class="label"> Re-allocate & add mock acc.</div>
+                                </div>
+                                <div class="folio">
+                                    <span class="label">PORTFOLIO</span> 
+                                    <span class="value">Portfolio #234</span>
+                                </div>
+                    		</div>
+                        </td>
+                        <td class="rt" width="73">
+                   	    	<img src="images/dashlet-rt-cap.png" width="73" height="96" alt="">
+                      </td>
+                    </tr>
+                </table>
+                
+            </div>
+            	<span id="dashletsize">dashletsize </span>
+            <div class="respDashlet slim">
+            	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+               		<tr>
+                    	<td class="lt"><a class="button icon mm addinv" href="#"><span>Add Investments</span></a></td>
+                        <td class="mid">
+                        	<div class="titlesection">
+                				<h2>Thomas & Mary Group / Shortname / Tommy (Welch) ...</h2><br/>
+                				<a href="#" class="rr-link">RISK/REWARD</a><span class="label">Proposal Risk Profile: </span> <span class="prp">MODERATE</span> <a href="#" class="rr-link"> Allocation Settings</a>
+            				</div>
+                        </td>
+                        <td class="rt" width="195">
+                        	<span class="label">TARGET INV. AMOUNT</span> 
+                        	<span class="value">$302,980,678,450.34</span>
+                        	<span class="label"> Re-allocate amount.</span>
+                        </td>
+                    </tr> 
+                </table>
+            </div>
+             	<span id="slimdash">dashletsize </span>
+                <div class="respDashlet simple">
+            	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+               		<tr>
+                        <td class="lt">
+                        	<div class="titlesection">
+                				<h2>Thomas & Mary Group / Shortname / Tommy (Welch) ...</h2><br/>
+                				<a href="#" class="rr-link">RISK/REWARD</a><span class="label">Proposal Risk Profile: </span> <span class="prp">MODERATE</span> <a href="#" class="rr-link"> Allocation Settings</a>
+            				</div>
+                        </td>
+                        <td class="rt" width="61">
+                   	    <img src="images/simpledash-rt-cap.png" width="61" height="63" alt=""></td>
+                    </tr> 
+                </table>
+            </div>
+            <span id="simpledash">dashletsize </span>
+        
+        
+            </div>
+            <div class="footer"><a class="button secondary left" href="#"><span>Back</span></a> <span id="foot">1405 × 707</span><div class="right"><a class="button" href="#"><span>Next</span></a></div> </div>
+       </div>
+
+	
+    </body>
+</html>
