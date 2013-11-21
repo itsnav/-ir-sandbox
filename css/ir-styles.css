@@ -362,7 +362,7 @@ a.button.small {
 	font-size: 11px;
 }
 
-/* @ Mega Menu */
+/********** @ Mega Menu **************/
 #megamenu {
 	width: 217px;
 	padding: 0 24px 24px 24px;
@@ -457,6 +457,27 @@ a.button.small {
 #megamenu li > h4 {
 	margin-top: 24px;
 }
+
+
+.quickadd {
+	background-color:#fff;
+	border: 1px solid #ccc;
+	clear:both;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 8px;
+}
+.quickadd h4 { 
+	font-size: 10px;
+	clor: #949494;
+	margin: 0 0 3px 0;
+}
+
+.quickadd input {
+	width: 140px;
+}
+
 
 /*Mega Menu detail*/
 .mmtab {
