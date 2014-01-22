@@ -530,6 +530,14 @@ a.button.small {
 	overflow: auto;
 }
 
+.advprod {
+	border-bottom: 1px solid #949494;
+	width: 85%;
+}
+.transprod {
+	color:#556996;
+}
+
 .mmtab ul li{
 	line-height: 200%;
 }
@@ -606,6 +614,10 @@ a.button.mm.addinv {
 }
 
 a.button.mm.addinv:hover {
+	background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #ffffff));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f4f8fc', EndColorStr='#ffffff');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#ffffff')";
 	background: #fff;
 	-moz-border-radius: 4px 4px 0 0;
 	-webkit-border-radius: 4px 4px 0 0;
@@ -1347,6 +1359,16 @@ td.cash {
 
 .ir-datagrid.alertsgrid .label {
 	margin-left: 10px;
+}
+
+.alertsgrid td {
+	color: #556996;
+}
+
+.alertsgrid th { text-align:left; }
+.alertsgrid td:hover {
+	text-decoration:underline;
+	cursor:pointer;
 }
 
 /*
